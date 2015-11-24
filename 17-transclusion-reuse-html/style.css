@@ -1,0 +1,24 @@
+/* Styles go here */
+.panel-heading {
+  margin: 0px;
+}
+
+.panel-body {
+  margin: 0px;
+}
+
+.user-ok {
+  
+}
+
+.user-warning {
+  color: yellow;
+}
+
+.user-problem {
+  color: orange;
+}
+
+.user-error {
+  color: red;
+}
