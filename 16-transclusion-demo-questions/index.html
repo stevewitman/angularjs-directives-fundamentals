@@ -1,0 +1,27 @@
+<!DOCTYPE >
+<html ng-app="app">
+
+  <head>
+    <link data-require="bootstrap@*" data-semver="3.3.5" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script data-require="jquery@*" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script data-require="angular.js@*" data-semver="1.4.7" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="mainCtrl" class="container">
+    <h1>Questions</h1>
+    <my-question q="Where is the next meeting?">
+      <input type="text" ng-model="answers.meetingLocation">
+    </my-question>
+    <my-question q="Is this meeting mandatory?">
+      <input type="radio" ng-value="true" ng-model="answers.mandatory" /> Yes
+      <input type="radio" ng-value="false" ng-model="answers.mandatory" /> No
+    </my-question>
+    <my-question q="Will food be provided?">
+      <button class="btn btn-lrg btn-primary">No</button>
+      <button class="btn btn-lrg btn-default">Yes</button>
+    </my-question>
+  </body>
+
+</html>
